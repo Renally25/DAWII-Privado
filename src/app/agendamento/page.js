@@ -1,7 +1,7 @@
 import db from '@/lib/db'
 
 export default async () => {
-    const consumidores = db.query("select * from consumidor");
+    const consumidores = await db.query("select * from consumidor");
 
         return (<>
         <h1>Consumidores</h1>
